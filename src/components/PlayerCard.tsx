@@ -1,8 +1,8 @@
 import { Card, CardContent, Typography } from "@mui/material";
 
 export interface CardData {
-  playerName: string;
-  playerNumber: number;
+  name: string;
+  id: number;
   description?: string;
   
 }
@@ -16,7 +16,7 @@ const PlayerCard: React.FC<PlayerCardProps> = ({ card }) => {
     <Card>
       <CardContent>
         <Typography variant="h5" component="div">
-          {card.playerName}
+          {card.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {card.description}
